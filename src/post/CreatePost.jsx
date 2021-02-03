@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function CreatePost({ user, posts, setPosts }) {
+export default function CreatePost({ user, posts, dispatch }) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
@@ -12,11 +12,13 @@ export default function CreatePost({ user, posts, setPosts }) {
     setContent(e.target.value);
   };
 
-  const handleCreatePost = (e) => {
-    const newPost = { title, content, author: user };
-    setPosts([newPost, ...posts]);
-    console.log("🚀 ~ handleCreatePost ~ newPost", newPost);
-    console.log("🚀 ~ handleCreatePost ~ posts", posts);
+  const handleCreatePost = () => {
+    dispatch({
+      type: "CREATE_POST",
+      title,
+      content,
+      author: user,
+    });
   };
 
   return (

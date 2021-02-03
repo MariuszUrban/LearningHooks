@@ -1,19 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Register() {
+export default function Register({ setUser }) {
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordRepeat, setPasswordRepeat] = useState("");
+
+  const handleUserName = (e) => {
+    setUserName(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handlePasswordRepeat = (e) => {
+    setPasswordRepeat(e.target.value);
+  };
+
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <label htmlFor="register-username">Username:</label>
-      <input type="text" name="register-username" id="register-username" />
+      <input
+        type="text"
+        name="register-username"
+        id="register-username"
+        onChange={handleUserName}
+      />
       <label htmlFor="register-password">Password:</label>
-      <input type="password" name="register-password" id="register-password" />
+      <input
+        type="password"
+        name="register-password"
+        id="register-password"
+        value={password}
+        onChange={handlePassword}
+      />
       <label htmlFor="register-password-repeat">Repeat password:</label>
       <input
         type="password"
         name="register-password-repeat"
         id="register-password-repeat"
+        value={passwordRepeat}
+        onChange={handlePasswordRepeat}
       />
-      <input type="submit" value="Register" />
+      <input
+        type="submit"
+        value="Register"
+        disabled={
+          userName === 0 || password.length === 0 || password !== passwordRepeat
+        }
+      />
     </form>
   );
 }

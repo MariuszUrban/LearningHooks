@@ -1,19 +1,23 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from "react";
 import { useResource } from "react-request-hook";
-import Post from '../post/Post';
+import { Link } from "react-navi";
+import Post from "../post/Post";
 
-export default function PostPage({id}) {
-    const [post, getPost] = useResource(() => ({
-        url: `/posts/${id}`,
-        method: 'get'
-    }))
+export default function PostPage({ id }) {
+  const [post, getPost] = useResource(() => ({
+    url: `/posts/${id}`,
+    method: "get",
+  }));
 
-    useEffect(getPost, [id])
+  useEffect(getPost, [id]);
 
-    return (
-        <div>
-            {(post && post.data) ? <Post {...post.data} /> : "Loading..."}
-            <hr/>
-        </div>
-    )
+  return (
+    <div>
+      <div>
+        <Link href="/">Go back to main page</Link>{" "}
+      </div>
+      {post && post.data ? <Post {...post.data} /> : "Loading..."}
+      <hr />
+    </div>
+  );
 }

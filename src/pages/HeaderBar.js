@@ -1,25 +1,27 @@
-import React, { useContext } from "react";
-import CreatePost from "../post/CreatePost";
-import UserBar from "../user/UserBar";
-import ChangeTheme from "../ChangeTheme";
-import Header from "../Header";
-import { ThemeContext, StateContext } from "../contexts";
+import React, { useContext } from 'react'
 
-export default function HeaderBar({ setTheme }) {
-  const theme = useContext(ThemeContext);
-  const { state } = useContext(StateContext);
-  const { user } = state;
+import CreatePost from '../post/CreatePost'
+import UserBar from '../user/UserBar'
+import Header from '../Header'
+import ChangeTheme from '../ChangeTheme'
+import { ThemeContext, StateContext } from '../contexts'
 
-  return (
-    <div style={{ padding: 8 }}>
-      <Header text="React Hooks Blog" />
-      <ChangeTheme theme={theme} setTheme={setTheme} />
-      <br />
-      <React.Suspense fallback={"Loading..."}>
-        <UserBar />
-      </React.Suspense>
-      {user && <CreatePost />}
-      <br />
-    </div>
-  );
+export default function HeaderBar ({ setTheme }) {
+    const theme = useContext(ThemeContext)
+
+    const { state } = useContext(StateContext)
+    const { user } = state
+
+    return (
+        <div>
+            <Header text="React Hooks Blog" />
+            <ChangeTheme theme={theme} setTheme={setTheme} />
+            <br />
+            <React.Suspense fallback={"Loading..."}>
+                <UserBar />
+            </React.Suspense>
+            <br />
+            {user && <CreatePost />}
+        </div>
+    )
 }

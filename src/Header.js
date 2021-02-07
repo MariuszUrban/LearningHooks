@@ -1,5 +1,5 @@
 import React from 'react'
-import {useTheme} from './hooks'
+import { useTheme } from './hooks'
 
 const Header = ({ text }) => {
   const { primaryColor } = useTheme()

@@ -3,10 +3,10 @@ function userReducer (state, action) {
       case 'LOGIN':
       case 'REGISTER':
           return action.username
-
+      
       case 'LOGOUT':
           return ''
-
+      
       default:
           return state
   }
@@ -15,12 +15,12 @@ function userReducer (state, action) {
 function postsReducer (state, action) {
   switch (action.type) {
       case 'FETCH_POSTS':
-        return action.posts
-        
+          return action.posts
+
       case 'CREATE_POST':
           const newPost = { title: action.title, content: action.content, author: action.author, id: action.id }
           return [ newPost, ...state ]
-
+      
       default:
           return state
   }

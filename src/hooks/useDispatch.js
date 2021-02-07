@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { StateContext } from "../contexts";
+import { useContext } from 'react'
+import { StateContext } from '../contexts'
 
-export default function useDispatch( context = StateContext) {
-    const {dispatch} = useContext(context); 
-    return dispatch; 
-  }
-  
+export default function useDispatch (context = StateContext) {
+  const { dispatch } = useContext(context)
+  return dispatch
+}

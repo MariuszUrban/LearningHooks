@@ -1,6 +1,6 @@
-import {ThemeContext} from '../contexts'; 
-import {useContext} from 'react'
+import { useContext } from 'react'
+import { ThemeContext } from '../contexts'
 
-export  default function useTheme() {
-    return useContext(ThemeContext)
+export default function useTheme () {
+  return useContext(ThemeContext)
 }

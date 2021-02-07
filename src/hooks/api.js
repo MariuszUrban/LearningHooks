@@ -1,33 +1,31 @@
-import { useResource } from "react-request-hook";
+import { useResource } from 'react-request-hook'
 
-export function useAPILogin() {
+export function useAPILogin () {
   return useResource((username, password) => ({
     url: `/login/${encodeURI(username)}/${encodeURI(password)}`,
-    method: "get",
-  }));
+    method: 'get'
+  }))
 }
 
-export function useAPIRegister() {
+export function useAPIRegister () {
   return useResource((username, password) => ({
-    url: "/users",
-    method: "post",
-    data: { username, password },
-  }));
+    url: '/users',
+    method: 'post',
+    data: { username, password }
+  }))
 }
 
-export function useAPICreatePost() {
+export function useAPICreatePost () {
   return useResource(({ title, content, author }) => ({
-    url: "/posts",
-    method: "post",
-    data: { title, content, author },
-  }));
+    url: '/posts',
+    method: 'post',
+    data: { title, content, author }
+  }))
 }
 
-export function useAPIThemes() {
+export function useAPIThemes () {
   return useResource(() => ({
-    url: "/themes",
-    method: "get",
-  }));
+    url: '/themes',
+    method: 'get'
+  }))
 }
-
-

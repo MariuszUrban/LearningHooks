@@ -1,6 +1,6 @@
 {
   "homepage": "http://mariuszurban.github.io/REACT-BLOG-APP",
-  "name": "chapter10_4",
+  "name": "react-blog-app",
   "version": "1.0.0",
   "private": true,
   "dependencies": {

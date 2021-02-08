@@ -1,7 +1,11 @@
 # REACT BLOG APP
 
+Simple React app build exclusively on variety of hooks as a practice. 
 
-
+In app I used basic React Hooks API to get familiar with general concepts of hooks, 
+checked few of community hooks, 
+created and tested custom hooks, 
+and simulated simple backend. 
 
 ## Tests
 

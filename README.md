@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REACT BLOG APP
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tests
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```sh
+npm install
+npm test
+```
 
-### `npm test`
+## Dependencies
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [@rehooks/window-size](https://ghub.io/@rehooks/window-size): React hook for subscribing to window size
+- [@typescript-eslint/eslint-plugin](https://ghub.io/@typescript-eslint/eslint-plugin): TypeScript plugin for ESLint
+- [@typescript-eslint/parser](https://ghub.io/@typescript-eslint/parser): An ESLint custom parser which leverages TypeScript ESTree
+- [@use-hooks/axios](https://ghub.io/@use-hooks/axios): Custom React Hooks for Axios.js
+- [axios](https://ghub.io/axios): Promise based HTTP client for the browser and node.js
+- [babel-eslint](https://ghub.io/babel-eslint): Custom parser for ESLint
+- [concurrently](https://ghub.io/concurrently): Run commands concurrently
+- [eslint-config-react-app](https://ghub.io/eslint-config-react-app): ESLint configuration used by Create React App
+- [eslint-plugin-flowtype](https://ghub.io/eslint-plugin-flowtype): Flowtype linting rules for ESLint.
+- [eslint-plugin-import](https://ghub.io/eslint-plugin-import): Import with sanity.
+- [eslint-plugin-jsx-a11y](https://ghub.io/eslint-plugin-jsx-a11y): Static AST checker for accessibility rules on JSX elements.
+- [eslint-plugin-react](https://ghub.io/eslint-plugin-react): React specific linting rules for ESLint
+- [http-proxy-middleware](https://ghub.io/http-proxy-middleware): The one-liner node.js proxy middleware for connect, express and browser-sync
+- [json-server](https://ghub.io/json-server): Get a full fake REST API with zero coding in less than 30 seconds
+- [navi](https://ghub.io/navi): A router-loader for React.
+- [react](https://ghub.io/react): React is a JavaScript library for building user interfaces.
+- [react-busy-indicator](https://ghub.io/react-busy-indicator): A stand-alone busy indicator for React.
+- [react-dom](https://ghub.io/react-dom): React package for working with the DOM.
+- [react-hookedup](https://ghub.io/react-hookedup): A collection of useful React hooks
+- [react-navi](https://ghub.io/react-navi): A batteries-included router for react.
+- [react-request-hook](https://ghub.io/react-request-hook): Managed request calls made easy by React Hooks
+- [react-scripts](https://ghub.io/react-scripts): Configuration and scripts for Create React App.
+- [use-debounce](https://ghub.io/use-debounce): Debounce hook for react
+- [use-undo](https://ghub.io/use-undo): undo/redo functionality with React Hooks
 
-### `npm run build`
+## Dev Dependencies
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [@testing-library/react-hooks](https://ghub.io/@testing-library/react-hooks): Simple and complete React hooks testing utilities that encourage good testing practices.
+- [eslint-plugin-react-hooks](https://ghub.io/eslint-plugin-react-hooks): ESLint rules for React Hooks
+- [react-test-renderer](https://ghub.io/react-test-renderer): React package for snapshot testing.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
